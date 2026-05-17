@@ -1,0 +1,125 @@
+.transaction-display {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-display h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.3em;
+}
+
+.transaction-display h3 {
+  margin: 20px 0 10px 0;
+  color: #555;
+  font-size: 1em;
+}
+
+.tx-info {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.tx-field {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tx-field:last-child {
+  border-bottom: none;
+}
+
+.tx-field .label {
+  font-weight: 600;
+  color: #667eea;
+  min-width: 120px;
+}
+
+.tx-field .value {
+  color: #333;
+  font-family: 'Courier New', monospace;
+  text-align: right;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.tx-field .value.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tx-hash-section {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tx-hash {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.tx-hash code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  color: #667eea;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #667eea;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #f0f4ff;
+}
+
+.tx-links {
+  display: flex;
+  gap: 10px;
+}
+
+.explorer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  flex: 1;
+  justify-content: center;
+}
+
+.explorer-link:hover {
+  background: #5568d3;
+}
